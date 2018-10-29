@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播照片</title>
+		<style type="text/css">
+			*{padding:0;margin:0;}
+			#box{
+				width: 500px;
+				height: 800px;
+				border:5px solid orangered;
+				margin:auto;
+				overflow: hidden;
+				position: relative;
+			}
+			#box img{
+				width: 500px;
+				height: 800px;
+			}
+			.a1 {
+	            animation: a11 20s linear infinite;
+	            position: absolute;
+	        }
+	        
+	        @keyframes a11{
+	            0%{top:0;left:0;opacity:1;}
+	            15%{top:0;left:0;opacity:1;}
+	            20%{top:800px;left:0;opacity:0;}
+	            35%{top:800px;left:0;opacity:0;}
+	            40%{top:400px;left:0;opacity:0;}
+	            55%{top:400px;left:0;opacity:0;}
+	            60%{top:-400px;left:0;opacity:0;}
+	            75%{top:-400px;left:0;opacity:0;}
+	            80%{top:-800px;left:0;opacity:0;}
+	            95%{top:-800px;left:0;opacity:0;}
+	            100%{top:0;left:0;opacity:1;}
+	        }
+	
+	        .a2{
+	            animation:a22 20s linear infinite;
+	            position:absolute;
+	        }
+	
+	        @keyframes a22{
+	            0%{top:-800px;left:0;opacity:0;}
+	            15%{top:-400px;;left:0;opacity:0;}
+	            20%{top:0;left:0;opacity:1;}
+	            35%{top:0;left:0;opacity:1;}
+	            40%{top:800px;left:0;opacity:0;}
+	            55%{top:800px;left:0;opacity:0;}
+	            60%{top:400px;left:0;opacity:0;}
+	            75%{top:400px;left:0;opacity:0;}
+	            80%{top:-400px;left:0;opacity:0;}
+	            95%{top:-400px;left:0;opacity:0;}
+	            100%{top:-800px;left:0;opacity:0;}
+	        }
+	
+	        .a3 {
+	            animation: a33 20s linear infinite;
+	            position: absolute;
+	        }
+	
+	        @keyframes a33{
+	            0%{top:-400px;left:0;opacity:0;}
+	            15%{top:-400px;left:0;opacity:0;}
+	            20%{top:-800px;left:0;opacity:0;}
+	            35%{top:-800px;left:0;opacity:0;}
+	            40%{top:0;left:0;opacity:1;}
+	            55%{top:0;left:0;opacity:1;}
+	            60%{top:800px;left:0;opacity:0;}
+	            75%{top:800px;left:0;opacity:0;}
+	            80%{top:400px;left:0;opacity:0;}
+	            95%{top:400px;left:0;opacity:0;}
+	            100%{top:-400px;left:0;opacity:0;}
+	        }
+	
+	        .a4 {
+	            animation: a44 20s linear infinite;
+	            position: absolute;
+	        }
+	
+	        @keyframes a44{
+	            0%{top:400px;left:0;opacity:0;}
+	            15%{top:400px;left:0;opacity:0;}
+	            20%{top:-400px;left:0;opacity:0;}
+	            35%{top:-400px;left:0;opacity:0;}
+	            40%{top:-800px;left:0;opacity:0;}
+	            55%{top:-800px;left:0;opacity:0;}
+	            60%{top:0;left:0;opacity:1;}
+	            75%{top:0;left:0;opacity:1;}
+	            80%{top:800px;left:0;opacity:0;}
+	            95%{top:800px;left:0;opacity:0;}
+	            100%{top:400px;left:0;opacity:0;}
+	        }
+	
+	        .a5 {
+	            animation: a55 20s linear infinite;
+	            position: absolute;
+	        }
+	
+	        @keyframes a55{
+	            0%{top:800px;left:0;opacity:0;}
+	            15%{top:800px;left:0;opacity:0;}
+	            20%{top:400px;left:0;opacity:0;}
+	            35%{top:400px;left:0;opacity:0;}
+	            40%{top:-400px;left:0;opacity:0;}
+	            55%{top:-400px;left:0;opacity:0;}
+	            60%{top:-800px;left:0;opacity:0;}
+	            75%{top:-800px;left:0;opacity:0;}
+	            80%{top:0;left:0;opacity:1;}
+	            95%{top:0;left:0;opacity:1;}
+	            100%{top:800px;left:0;opacity:0;}
+	}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="a1">
+				<img src="img/img1.png"/>
+			</div>
+			<div class="a2">
+				<img src="img/img2.png"/>
+			</div>
+			<div class="a3">
+				<img src="img/img3.png"/>
+			</div>
+			<div class="a4">
+				<img src="img/img4.png"/>
+			</div>
+			<div class="a5">
+				<img src="img/img5.png"/>
+			</div>
+		</div>
+	</body>
+</html>
